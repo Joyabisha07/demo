@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Demo QR</title>
+<style>
+body{margin:0;min-height:100vh;background:#080808;color:#fff;font-family:Arial;text-align:center;display:flex;align-items:center;justify-content:center}
+.box{padding:30px;max-width:700px}
+h1{color:#ff1744}
+.qr{background:#fff;padding:18px;border-radius:16px;display:inline-block;margin:20px}
+img{width:min(75vw,500px);height:auto;display:block}
+p{color:#ccc;font-size:18px;line-height:1.5}
+code{color:#00e676}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>🚨 CYBER INCIDENT #001</h1>
+<p>Scan this QR code for the classroom simulation.</p>
+<div class="qr">
+<img id="qr" alt="Cyber demonstration QR code">
+</div>
+<p>After hosting this folder on GitHub Pages, edit this file and replace<br>
+<code>YOUR-USERNAME</code> and <code>cyber-demo</code> with your actual GitHub details.</p>
+<script>
+const target = "https://YOUR-USERNAME.github.io/cyber-demo/";
+document.getElementById("qr").src =
+"https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=" +
+encodeURIComponent(target);
+</script>
+</div>
+</body>
+</html>
